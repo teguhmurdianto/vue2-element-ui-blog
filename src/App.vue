@@ -1,4 +1,4 @@
-<template>
+<<template>
   <div id="app">
     <router-view/>
   </div>
@@ -11,11 +11,16 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #b3b7bb;
+    height: 100%;
+  }
 </style>

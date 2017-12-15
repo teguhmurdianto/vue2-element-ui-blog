@@ -1,14 +1,13 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
-import 'element-ui/lib/theme-chalk/index.css';
 import {
   // Pagination,
   // Dialog,
   // Autocomplete,
-  // Dropdown,
-  // DropdownMenu,
-  // DropdownItem,
+  Dropdown,
+  DropdownMenu,
+  DropdownItem,
   Menu,
   Submenu,
   MenuItem,
@@ -25,10 +24,10 @@ import {
   // Select,
   // Option,
   // OptionGroup,
-  // Button,
+  Button,
   // ButtonGroup,
-  // Table,
-  // TableColumn,
+  Table,
+  TableColumn,
   // DatePicker,
   // TimeSelect,
   // TimePicker,
@@ -45,7 +44,7 @@ import {
   // Alert,
   // Slider,
   // Icon,
-  // Row,
+  Row,
   Col,
   // Upload,
   // Progress,
@@ -71,6 +70,8 @@ import {
   // Message,
   // Notification
 } from 'element-ui';
+import './assets/sass/theme/index.css';
+import './assets/sass/theme/display.css';
 import App from './App';
 import router from './router';
 
@@ -79,9 +80,9 @@ Vue.config.productionTip = false;
 // Vue.use(Pagination);
 // Vue.use(Dialog);
 // Vue.use(Autocomplete);
-// Vue.use(Dropdown);
-// Vue.use(DropdownMenu);
-// Vue.use(DropdownItem);
+Vue.use(Dropdown);
+Vue.use(DropdownMenu);
+Vue.use(DropdownItem);
 Vue.use(Menu);
 Vue.use(Submenu);
 Vue.use(MenuItem);
@@ -97,10 +98,10 @@ Vue.use(RadioButton);
 // Vue.use(Select);
 // Vue.use(Option);
 // Vue.use(OptionGroup);
-// Vue.use(Button);
+Vue.use(Button);
 // Vue.use(ButtonGroup);
-// Vue.use(Table);
-// Vue.use(TableColumn);
+Vue.use(Table);
+Vue.use(TableColumn);
 // Vue.use(DatePicker);
 // Vue.use(TimeSelect);
 // Vue.use(TimePicker);
@@ -117,7 +118,7 @@ Vue.use(RadioButton);
 // Vue.use(Alert);
 // Vue.use(Slider);
 // Vue.use(Icon);
-// Vue.use(Row);
+Vue.use(Row);
 Vue.use(Col);
 // Vue.use(Upload);
 // Vue.use(Progress);

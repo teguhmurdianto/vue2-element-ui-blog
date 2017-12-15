@@ -11,7 +11,7 @@
   "plugins": ["transform-runtime",["component", [
     {
       "libraryName": "element-ui",
-      "styleLibraryName": "theme-chalk"
+      "styleLibraryName": "~src/assets/sass/theme"
     }
   ]]],
   "env": {
