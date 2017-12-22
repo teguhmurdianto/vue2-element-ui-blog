@@ -70,8 +70,7 @@ import {
   // Message,
   // Notification
 } from 'element-ui';
-import './assets/sass/theme/index.css';
-import './assets/sass/theme/display.css';
+import './assets/sass/element-variables.scss';
 import App from './App';
 import router from './router';
 

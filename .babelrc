@@ -8,12 +8,7 @@
     }],
     "stage-2"
   ],
-  "plugins": ["transform-runtime",["component", [
-    {
-      "libraryName": "element-ui",
-      "styleLibraryName": "~src/assets/sass/theme"
-    }
-  ]]],
+  "plugins": ["transform-runtime",["component"]],
   "env": {
     "test": {
       "presets": ["env", "stage-2"],
