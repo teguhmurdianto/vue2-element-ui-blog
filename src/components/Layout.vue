@@ -11,11 +11,26 @@
           <el-menu-item index="2-2">item two</el-menu-item>
           <el-menu-item index="2-3">item three</el-menu-item>
         </el-submenu>
-        <el-menu-item index="3">Orders</el-menu-item>
+        <el-menu-item index="3"><a href="https://www.ele.me" target="_blank">Orders</a></el-menu-item>
       </el-menu>
     </el-container>
   </el-header>
-  <el-main>Main</el-main>
+  <el-main>
+    <el-row>
+      <el-col :span="8" v-for="(o, index) in 2" :key="o" :offset="index > 0 ? 2 : 0">
+        <el-card :body-style="{ padding: '0px' }">
+          <img src="/static/images/hamburger.png" class="image">
+          <div style="padding: 14px;">
+            <span>Yummy hamburger</span>
+            <div class="bottom clearfix">
+              <time class="time">{{ currentDate }}</time>
+              <el-button type="text" class="button">Operating button</el-button>
+            </div>
+          </div>
+        </el-card>
+      </el-col>
+    </el-row>
+  </el-main>
   <el-footer>Footer</el-footer>
 </el-container>
 </div>
@@ -27,7 +42,8 @@ export default {
   data() {
     return {
       activeIndex: "1",
-      activeIndex2: "1"
+      activeIndex2: "1",
+      currentDate: new Date()
     };
   },
   methods: {
@@ -37,29 +53,58 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped>
-.el-header {
-  width: 100%;
-  height: 60px;
-  position: fixed;
-  background: #39454b;
-  color: rgba(185, 186, 187, 0.5);
-}
-.el-menu {
-  background: transparent;
-  top: 0;
-}
-.el-main {
-  margin-top: 60px;
-  height: 1300px;
-}
-.el-footer {
-  position: relative;
-  height: 5em;
-  line-height: 5em;
-  margin: 0;
-  background: #39454b;
-  color: rgba(185, 186, 187, 0.5);
-  overflow: hidden;
+<style lang="scss">
+.layout .el-container {
+  .el-header {
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    .el-container .el-menu {
+      width: 100%;
+      vertical-align: middle;
+      background: transparent;
+    }
+  }
+  .el-main {
+    height: 1300px;
+    padding: 20px 0 0 0;
+  }
+  .el-footer {
+    position: relative;
+    height: 100px;
+    line-height: 100px;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .time {
+    font-size: 13px;
+    color: #999;
+  }
+
+  .bottom {
+    margin-top: 13px;
+    line-height: 12px;
+  }
+
+  .button {
+    padding: 0;
+    float: right;
+  }
+
+  .image {
+    width: 100%;
+    display: block;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+    display: table;
+    content: "";
+  }
+
+  .clearfix:after {
+    clear: both;
+  }
 }
 </style>

@@ -10,17 +10,17 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    background-color: #EEEEEE;
   }
   .app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #b3b7bb;
     height: 100%;
     overflow-y: scroll;
   }

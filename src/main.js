@@ -49,7 +49,7 @@ import {
   // Upload,
   // Progress,
   // Badge,
-  // Card,
+  Card,
   // Rate,
   // Steps,
   // Step,
@@ -64,43 +64,43 @@ import {
   Header,
   Aside,
   Main,
-  Footer,
+  Footer
   // Loading,
   // MessageBox,
   // Message,
   // Notification
-} from 'element-ui';
-import './assets/sass/element-variables.scss';
-import App from './App';
-import router from './router';
+} from 'element-ui'
+import './assets/sass/element-variables.scss'
+import App from './App'
+import router from './router'
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 
 // Vue.use(Pagination);
 // Vue.use(Dialog);
 // Vue.use(Autocomplete);
-Vue.use(Dropdown);
-Vue.use(DropdownMenu);
-Vue.use(DropdownItem);
-Vue.use(Menu);
-Vue.use(Submenu);
-Vue.use(MenuItem);
+Vue.use(Dropdown)
+Vue.use(DropdownMenu)
+Vue.use(DropdownItem)
+Vue.use(Menu)
+Vue.use(Submenu)
+Vue.use(MenuItem)
 Vue.use(MenuItemGroup)
 // Vue.use(Input);
 // Vue.use(InputNumber);
 // Vue.use(Radio);
-Vue.use(RadioGroup);
-Vue.use(RadioButton);
+Vue.use(RadioGroup)
+Vue.use(RadioButton)
 // Vue.use(Checkbox);
 // Vue.use(CheckboxGroup);
 // Vue.use(Switch);
 // Vue.use(Select);
 // Vue.use(Option);
 // Vue.use(OptionGroup);
-Vue.use(Button);
+Vue.use(Button)
 // Vue.use(ButtonGroup);
-Vue.use(Table);
-Vue.use(TableColumn);
+Vue.use(Table)
+Vue.use(TableColumn)
 // Vue.use(DatePicker);
 // Vue.use(TimeSelect);
 // Vue.use(TimePicker);
@@ -117,12 +117,12 @@ Vue.use(TableColumn);
 // Vue.use(Alert);
 // Vue.use(Slider);
 // Vue.use(Icon);
-Vue.use(Row);
-Vue.use(Col);
+Vue.use(Row)
+Vue.use(Col)
 // Vue.use(Upload);
 // Vue.use(Progress);
 // Vue.use(Badge);
-// Vue.use(Card);
+Vue.use(Card)
 // Vue.use(Rate);
 // Vue.use(Steps);
 // Vue.use(Step);
@@ -132,11 +132,11 @@ Vue.use(Col);
 // Vue.use(CollapseItem);
 // Vue.use(Cascader);
 // Vue.use(ColorPicker);
-Vue.use(Container);
-Vue.use(Header);
-Vue.use(Aside);
-Vue.use(Main);
-Vue.use(Footer);
+Vue.use(Container)
+Vue.use(Header)
+Vue.use(Aside)
+Vue.use(Main)
+Vue.use(Footer)
 //
 // Vue.use(Loading.directive)
 //
@@ -153,5 +153,5 @@ new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App },
-});
+  components: { App }
+})
